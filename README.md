@@ -17,5 +17,5 @@ All the python projects contain a requirments.txt file. Which you can use to loa
 ## Analyzing the Stroop Effect
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 
-Language/Technologies: Python (scipy, statsmodels, matplotlib)
+Language/Technologies: Python (scipy, statsmodels, matplotlib)  
 Data used: [Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q
