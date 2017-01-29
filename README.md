@@ -12,6 +12,6 @@ All the python projects contain a requirments.txt file. Which you can use to loa
 
 # Projects
 
-*  ## [wiki](https://github.com/nilbus/github-portfolio/wiki) [Foo](##Project x)
+*  [wiki](https://github.com/nilbus/github-portfolio/wiki) [Foo](##Project x)
 
 ## Project x
