@@ -19,3 +19,5 @@ In this project data of a Stroop task is analyzed. To evaluate if in the data th
 
 Language/Technologies: Python (scipy, statsmodels, matplotlib)  
 Data used: [Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
+Some silly
