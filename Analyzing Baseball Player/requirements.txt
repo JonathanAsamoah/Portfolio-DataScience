@@ -1,0 +1,8 @@
+urllib
+requests
+zipfile
+IPython
+pandas
+numpy
+matplotlib
+seaborn
