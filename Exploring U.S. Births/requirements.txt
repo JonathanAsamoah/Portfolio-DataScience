@@ -1,0 +1,6 @@
+IPython
+urllib
+pandas
+numpy
+matplotlib
+seaborn
