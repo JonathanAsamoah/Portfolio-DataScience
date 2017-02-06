@@ -23,7 +23,7 @@ All the python projects contain a requirments.txt file. Which you can use to loa
 * Exploring U.S. Births
 
 ## Analyzing the Stroop Effect
-In this project data of a Stroop task is analyzed. To evaluate if in the data the phenomenon called the Stroop effect is present.
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
 
 Languages/Technologies: 
 * Python (scipy, statsmodels, matplotlib)
@@ -34,17 +34,99 @@ Data:
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
 ## Analyzing Winning Jeopardy Strategies
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Analyzing Movie Reviews
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Analyzing Star Wars Survey
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Analyzing NYC High School Data
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Visualizing The Gender Gap In College Degrees
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Visualizing Earnings Based On College Majors
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Analyzing Thanksgiving Dinner
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 ## Exploring Gun Deaths In The US
+Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+* Visualizing Data
+* Statistics
+
+Data: 
+* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+
 
 ## Exploring U.S. Births
 
-Languages/Technologies: Python (scipy, statsmodels, matplotlib)
+Languages/Technologies: 
+* Python (scipy, statsmodels, matplotlib)
+
 Data: 
 * [FiveThirtyEight: US births 1994-2003 CDC](https://raw.githubusercontent.com/fivethirtyeight/data/master/births/US_births_1994-2003_CDC_NCHS.csv)
 * [FiveThirtyEight: US births 2000-2014 SSA](https://raw.githubusercontent.com/fivethirtyeight/data/master/births/US_births_2000-2014_SSA.csv)
