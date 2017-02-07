@@ -11,8 +11,8 @@ We use the salary related part of the statistics in the data set that start in t
 # Languages/Technologies
 
 * Python 
-..* pandas
-..* matplotlib
+  * pandas
+  * matplotlib
 * Visualizing Data
 
 # Remarks
