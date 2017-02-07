@@ -19,4 +19,4 @@ The python project contains a requirments.txt file. Which you can use to load th
 # Data
 
 * [FiveThirtyEight: Guns Data](https://www.fivethirtyeight.com/)
-* [Census Data]()
+* [Census Data](https://github.com/JonathanAsamoah/Portfolio/blob/master/Exploring%20Gun%20Deaths%20in%20the%20US/data/census.csv)
