@@ -11,7 +11,8 @@ Therefor, to run the code in the projects on your own you have to download the d
 
 # List of Projects
 
-* Analyzing the Stroop Effect
+* [Analyzing Baseball Player]()
+* [Analyzing the Stroop Effect]()
 * Analyzing Winning Jeopardy Strategies
 * Analyzing Movie Reviews
 * Analyzing Star Wars Survey
@@ -22,27 +23,36 @@ Therefor, to run the code in the projects on your own you have to download the d
 
 # Projects
 
+## Analyzing Baseball Player
+In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
+
+### Languages/Technologies: 
+* Python (pandas, matplotlib)
+* Visualizing Data
+
+### Data: 
+* [Lahman: Baseball Data](http://seanlahman.com/files/database/baseballdatabank-master_2016-03-02.zip)
+
 ## Analyzing the Stroop Effect
 Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
 
 ### Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
+* Python (pandas, scipy, statsmodels, matplotlib)
 * Visualizing Data
 * Statistics
 
 ### Data: 
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
-## Analyzing Winning Jeopardy Strategies
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+## Analyzing Jeopardy Winning Strategies
+Identifying pattern in questions from the TV show Jeopardy
 
 Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
+* Python (pandas, scipy, nltk)
 * Statistics
 
 Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+* [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
 
 ## Analyzing Movie Reviews
 Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
@@ -122,7 +132,7 @@ Data:
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
 
-## Exploring U.S. Births<a name="exploring_U.S._births"></a>
+## [Exploring U.S. Births](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploring%20U.S.%20Births)
 In the project the number of births per year in the 
 Languages/Technologies: 
 * Python (pandas, matplotlib)
