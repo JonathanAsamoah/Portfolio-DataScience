@@ -1,5 +1,7 @@
+os
+shutil
+io
 urllib
-requests
 zipfile
 IPython
 pandas
