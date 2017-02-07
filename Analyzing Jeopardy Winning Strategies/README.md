@@ -1,4 +1,4 @@
-# Description
+# Analyzing Jeopardy Winning Strategies
 
 Jeopardy is a popular TV show. Where the participants answer questions to win money. In this project the Jeopardy are analyzed and patterns in the question dataset are searched to gain an edge.
 
