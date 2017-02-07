@@ -8,12 +8,11 @@ The [data set](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Y
 
 # Languages/Technologies
 
-* Python 
-..* pandas 
-..* matplotlib 
-..* scipy 
-..* statsmodels 
-..* matplotlib 
+* Python  
+  * pandas
+  * scipy 
+  * statsmodels 
+  * matplotlib 
 * Visualizing Data 
 * Statistics 
 
