@@ -8,8 +8,8 @@ Hereto, a [dataset]( https://github.com/fivethirtyeight/data/tree/master/births)
 # Languages/Technologies
 
 * Python 
-..* pandas
-..* matplotlib
+  * pandas
+  * matplotlib
 * Visualizing Data
 
 # Remarks
