@@ -25,7 +25,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Exploring Gun Deaths In The US](##Exploring-Gun-Deaths-In The-US)
 * [Exploring U.S. Births](##Exploring-U.S.-Births)
 
-# Projects Short Description
+# Project Short Descriptions
 
 ## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
 In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
