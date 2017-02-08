@@ -13,8 +13,9 @@ Therefor, to run the code in the projects on your own you have to download the d
 
 * [Analyzing Baseball Player]()
 * [Analyzing the Stroop Effect]()
+* [Analyzing NYC High School Data]()
 * [Analyzing Winning Jeopardy Strategies]()
-* Analyzing Movie Reviews
+* [Analyzing Movie Reviews]()
 * Analyzing Star Wars Survey
 * [Visualizing The Gender Gap In College Degrees]()
 * [Visualizing Earnings Based On College Majors]()
@@ -54,6 +55,17 @@ Identifying pattern in questions from the TV show Jeopardy.
 ### Data 
 * [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
 
+## [Analyzing NYC High School Data]()
+Analyzing relationship between SAT scores and demographic factors.
+
+### Languages/Technologies: 
+* Python (pandas, matplotlib, Basemap, regex)
+* Statistcs
+* Visualizing Data
+ 
+### Data
+[New York City: SAT scores of students](https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4)
+
 ## [Analyzing Movie Reviews](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Movie%20Reviews)
 Comparison of Fandango and Metacritic movie ratings.
 
@@ -65,9 +77,13 @@ Comparison of Fandango and Metacritic movie ratings.
 * [FiveThirtyEight: Fandango Score Comparison](https://raw.githubusercontent.com/fivethirtyeight/data/master/fandango/fandango_score_comparison.csv)
 
 ## Analyzing Star Wars Survey
+Analyze a Star Wars survey to analyze how the Star Wars movies are rated.
 
+### Languages/Technologies: 
+* Python (pandas, scipy, matplotlib)
 
-## Analyzing NYC High School Data
+### Data 
+* [FiveThirtyEight: Star Wars Data](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey)
 
 
 ## [Visualizing The Gender Gap In College Degrees](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20The%20Gender%20Gap%20In%20College%20Degrees)
