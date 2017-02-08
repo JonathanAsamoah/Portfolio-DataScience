@@ -18,10 +18,11 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Analyzing The Stroop Effect](##Analyzing-The-Stroop-Effect)
 * [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
 * [Analyzing Winning Jeopardy Strategies](##Analyzing-Winning-Jeopardy-Strategies)
+* [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
 * [Analyzing Movie Reviews](##Analyzing-Movie-Reviews)
 * [Analyzing Star Wars Survey Data](##Analyzing-Star-Wars-Survey-Data)
-* [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
 * [Visualizing Earnings Based On College Majors](##Visualizing-Earnings-Based-On-College-Majors)
+* [Analyzing Thanksgiving Dinner](##Analyzing-Thanksgiving-Dinner)
 * [Exploring Gun Deaths In The US](##Exploring-Gun-Deaths-In The-US)
 * [Exploring U.S. Births](##Exploring-U.S.-Births)
 
@@ -48,16 +49,6 @@ Analyzed the Stroop effect using descriptive statistics to provide an intuition 
 ### Data: 
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
-## [Analyzing Jeopardy Winning Strategies](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Jeopardy%20Winning%20Strategies)
-Identifying pattern in questions from the TV show Jeopardy.
-
-### Languages/Technologies: 
-* Python (pandas, scipy, nltk)
-* Statistics
-
-### Data 
-* [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
-
 ## [Analyzing NYC High School Data](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20NYC%20High%20School%20Data)
 Analyzing relationship between SAT scores and demographic factors.
 
@@ -68,6 +59,26 @@ Analyzing relationship between SAT scores and demographic factors.
  
 ### Data
 [New York City: SAT scores of students](https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4)
+
+## [Analyzing Jeopardy Winning Strategies](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Jeopardy%20Winning%20Strategies)
+Identifying pattern in questions from the TV show Jeopardy.
+
+### Languages/Technologies: 
+* Python (pandas, scipy, nltk)
+* Statistics
+
+### Data 
+* [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
+
+## [Visualizing The Gender Gap In College Degrees](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20The%20Gender%20Gap%20In%20College%20Degrees)
+Visulaize gender gap in bachelor college majors.
+
+### Languages/Technologies: 
+* Python (pandas, matplotlib)
+ * Visualizing Data
+ 
+### Data
+* [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
 ## [Analyzing Movie Reviews](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Movie%20Reviews)
 Comparison of Fandango and Metacritic movie ratings.
@@ -87,17 +98,6 @@ Analyze a Star Wars survey to analyze how the Star Wars movies are rated.
 
 ### Data 
 * [FiveThirtyEight: Star Wars Data](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey)
-
-
-## [Visualizing The Gender Gap In College Degrees](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20The%20Gender%20Gap%20In%20College%20Degrees)
-Visulaize gender gap in bachelor college majors.
-
-### Languages/Technologies: 
-* Python (pandas, matplotlib)
- * Visualizing Data
- 
-### Data
-* [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
 ## [Visualizing Earnings Based On College Majors](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earnings%20Based%20On%20College%20Majors)
 Visulaize relaions between college majors and other factors.
