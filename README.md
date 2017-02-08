@@ -6,7 +6,7 @@ The Projects section gives an ... of all ... in this repository, a short explani
 
 # Remarks
 
-The most projects inside the repository don't contain the data the projects are build on.  
+The most of the projects inside the repository don't contain the data the project is build on.  
 Therefor, to run the code in the projects on your own you have to download the data. If this is nessary a explanition to do this is included in the projects readme file.
 
 # List of Projects
@@ -23,7 +23,7 @@ Therefor, to run the code in the projects on your own you have to download the d
 
 # Projects Short Description
 
-## Analyzing Baseball Player
+## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
 In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
 
 ### Languages/Technologies: 
@@ -33,7 +33,7 @@ In this project the salary evolvment of MBA players between 1985 and 2015 is ana
 ### Data: 
 * [Lahman: Baseball Data](http://seanlahman.com/files/database/baseballdatabank-master_2016-03-02.zip)
 
-## Analyzing the Stroop Effect
+## [Analyzing the Stroop Effect](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20the%20Stroop%20Effect)
 Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
 
 ### Languages/Technologies: 
@@ -44,7 +44,7 @@ Analyzed the Stroop effect using descriptive statistics to provide an intuition 
 ### Data: 
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
-## Analyzing Jeopardy Winning Strategies
+## [Analyzing Jeopardy Winning Strategies](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Jeopardy%20Winning%20Strategies)
 Identifying pattern in questions from the TV show Jeopardy.
 
 ### Languages/Technologies: 
@@ -54,7 +54,7 @@ Identifying pattern in questions from the TV show Jeopardy.
 ### Data 
 * [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
 
-## Analyzing Movie Reviews
+## [Analyzing Movie Reviews](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Movie%20Reviews)
 Comparison of Fandango and Metacritic movie ratings.
 
 ### Languages/Technologies: 
@@ -70,7 +70,7 @@ Comparison of Fandango and Metacritic movie ratings.
 ## Analyzing NYC High School Data
 
 
-## Visualizing The Gender Gap In College Degrees
+## [Visualizing The Gender Gap In College Degrees](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20The%20Gender%20Gap%20In%20College%20Degrees)
 Visulaize gender gap in bachelor college majors.
 
 ### Languages/Technologies: 
@@ -80,7 +80,7 @@ Visulaize gender gap in bachelor college majors.
 ### Data
 * [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
-## Visualizing Earnings Based On College Majors
+## [Visualizing Earnings Based On College Majors](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earnings%20Based%20On%20College%20Majors)
 Visulaize relaions between college majors and other factors.
 
 ### Languages/Technologies: 
@@ -90,7 +90,7 @@ Visulaize relaions between college majors and other factors.
 ### Data
 * [FiveThirtyEight: College Major Dataset](https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv)
 
-## Analyzing Thanksgiving Dinner
+## [Analyzing Thanksgiving Dinner](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Thanksgiving%20Dinner)
 Analyzed Thanksgiving dinner behaviour of US citizens based on a survey from 2015.
 
 ### Languages/Technologies: 
@@ -99,7 +99,7 @@ Analyzed Thanksgiving dinner behaviour of US citizens based on a survey from 201
 ### Data
 * [FiveThirtyEight: Thanksgiving 2015](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015)
 
-## Exploring Gun Deaths In The US
+## [Exploring Gun Deaths In The US](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploring%20Gun%20Deaths%20in%20the%20US)
 In this project the gun deaths in the US for the years 2012 to 2014 are analyzed.
 
 ### Languages/Technologies: 
