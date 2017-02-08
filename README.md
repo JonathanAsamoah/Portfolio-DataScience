@@ -22,7 +22,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Analyzing Star Wars Survey Data](##Analyzing-Star-Wars-Survey-Data)
 * [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
 * [Visualizing Earnings Based On College Majors](##Visualizing-Earnings-Based-On-College-Majors)
-* [Exploring Gun Deaths In The US](##Exploring-Gun-Deaths-In The-US)
+* [Exploring Gun Deaths In The U.S.](##Exploring-Gun-Deaths-In-The-U.S.)
 * [Exploring U.S. Births](##Exploring-U.S.-Births)
 
 # Project Short Descriptions
@@ -118,7 +118,7 @@ Analyzed Thanksgiving dinner behaviour of US citizens based on a survey from 201
 ### Data
 * [FiveThirtyEight: Thanksgiving 2015](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015)
 
-## [Exploring Gun Deaths In The US](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploring%20Gun%20Deaths%20in%20the%20US)
+## [Exploring Gun Deaths In The U.S.](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploring%20Gun%20Deaths%20in%20the%20U.S)
 In this project the gun deaths in the US for the years 2012 to 2014 are analyzed.
 
 ### Languages/Technologies: 
