@@ -25,7 +25,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Exploring Gun Deaths In The US](##Exploring-Gun-Deaths-In The-US)
 * [Exploring U.S. Births](##Exploring-U.S.-Births)
 
-# Projects Short Description
+# Project Short Descriptions
 
 ## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
 In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
@@ -58,7 +58,7 @@ Identifying pattern in questions from the TV show Jeopardy.
 ### Data 
 * [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
 
-## [Analyzing NYC High School Data]()
+## [Analyzing NYC High School Data](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20NYC%20High%20School%20Data)
 Analyzing relationship between SAT scores and demographic factors.
 
 ### Languages/Technologies: 
@@ -79,7 +79,7 @@ Comparison of Fandango and Metacritic movie ratings.
 ### Data 
 * [FiveThirtyEight: Fandango Score Comparison](https://raw.githubusercontent.com/fivethirtyeight/data/master/fandango/fandango_score_comparison.csv)
 
-## Analyzing Star Wars Survey
+## [Analyzing Star Wars Survey Data](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Star%20Wars%20Survey%20Data)
 Analyze a Star Wars survey to analyze how the Star Wars movies are rated.
 
 ### Languages/Technologies: 
