@@ -13,15 +13,15 @@ Therefor, to run the code in the projects on your own you have to download the d
 
 * [Analyzing Baseball Player]()
 * [Analyzing the Stroop Effect]()
-* Analyzing Winning Jeopardy Strategies
+* [Analyzing Winning Jeopardy Strategies]()
 * Analyzing Movie Reviews
 * Analyzing Star Wars Survey
-* Visualizing The Gender Gap In College Degrees
-* Visualizing Earnings Based On College Majors
-* Exploring Gun Deaths In The US
+* [Visualizing The Gender Gap In College Degrees]()
+* [Visualizing Earnings Based On College Majors]()
+* [Exploring Gun Deaths In The US]()
 * [Exploring U.S. Births]("exploring_U.S._births")
 
-# Projects
+# Projects Short Description
 
 ## Analyzing Baseball Player
 In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
@@ -45,100 +45,79 @@ Analyzed the Stroop effect using descriptive statistics to provide an intuition 
 * [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
 ## Analyzing Jeopardy Winning Strategies
-Identifying pattern in questions from the TV show Jeopardy
+Identifying pattern in questions from the TV show Jeopardy.
 
-Languages/Technologies: 
+### Languages/Technologies: 
 * Python (pandas, scipy, nltk)
 * Statistics
 
-Data: 
+### Data 
 * [Jeopardy Questions Google Drive](https://drive.google.com/file/d/0BwT5wj_P7BKXUl9tOUJWYzVvUjA/view)
 
 ## Analyzing Movie Reviews
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+Comparison of Fandango and Metacritic movie ratings.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
+### Languages/Technologies: 
+* Python (pandas, scipy, matplotlib)
 * Statistics
 
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+### Data 
+* [FiveThirtyEight: Fandango Score Comparison](https://raw.githubusercontent.com/fivethirtyeight/data/master/fandango/fandango_score_comparison.csv)
 
 ## Analyzing Star Wars Survey
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
-
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
 ## Analyzing NYC High School Data
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
-
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
 
 ## Visualizing The Gender Gap In College Degrees
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+Visulaize gender gap in bachelor college majors.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
-
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+### Languages/Technologies: 
+* Python (pandas, matplotlib)
+ * Visualizing Data
+ 
+### Data
+* [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
 ## Visualizing Earnings Based On College Majors
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+Visulaize relaions between college majors and other factors.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
-
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+### Languages/Technologies: 
+* Python (pandas, matplotlib)
+ * Visualizing Data
+ 
+### Data
+* [FiveThirtyEight: College Major Dataset](https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv)
 
 ## Analyzing Thanksgiving Dinner
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+Analyzed Thanksgiving dinner behaviour of US citizens based on a survey from 2015.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
+### Languages/Technologies: 
+* Python (pandas)
 
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+### Data
+* [FiveThirtyEight: Thanksgiving 2015](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015)
 
 ## Exploring Gun Deaths In The US
-Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
+In this project the gun deaths in the US for the years 2012 to 2014 are analyzed.
 
-Languages/Technologies: 
-* Python (scipy, statsmodels, matplotlib)
-* Visualizing Data
-* Statistics
+### Languages/Technologies: 
+* Python (pandas)
 
-Data: 
-* [Udacity: Stroop data](https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&sa=D&ust=1485701730039000&usg=AFQjCNGwMaCWnQ8lZfV8LEmhI_b6mdfQ7Q)
+### Data
+* [FiveThirtyEight: Guns Data](https://www.fivethirtyeight.com/)
+* [Census Data](https://github.com/JonathanAsamoah/Portfolio/blob/master/Exploring%20Gun%20Deaths%20in%20the%20US/data/census.csv)
 
 
 ## [Exploring U.S. Births](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploring%20U.S.%20Births)
-In the project the number of births per year in the 
-Languages/Technologies: 
+In the project the number of births per year in the USA is analyzed
+
+### Languages/Technologies: 
 * Python (pandas, matplotlib)
 * Visualizing Data
 
-Datasets: 
+### Data
 * [FiveThirtyEight: US births 1994-2003 CDC](https://raw.githubusercontent.com/fivethirtyeight/data/master/births/US_births_1994-2003_CDC_NCHS.csv)
 * [FiveThirtyEight: US births 2000-2014 SSA](https://raw.githubusercontent.com/fivethirtyeight/data/master/births/US_births_2000-2014_SSA.csv)
 
