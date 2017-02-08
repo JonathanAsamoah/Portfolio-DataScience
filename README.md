@@ -1,26 +1,29 @@
 # Portfolio
 
 This repository contains some of my projects in the area of Data Science. The projects are mostly related to the common tasks in the domain of Data Science data wrangling, visuliatzion, statistics and machine learning.
-The Remark section of this document contians some general informations to execute the project.
-The Projects section gives an ... of all ... in this repository, a short explanition of the projects and a link to the project.
+The [Remark]() section of this document contians some general informations to run the projects.
+The [List of Projects]() section list all projects in this repository and is followed by the [Projects Short Description]() section that contains a short explanition of the projects, a link to the project, highlights the technologies and the data used.
 
 # Remarks
 
-The most of the projects inside the repository don't contain the data the project is build on.  
-Therefor, to run the code in the projects on your own you have to download the data. If this is nessary a explanition to do this is included in the projects readme file.
+All Python projects inside this repository use the Python Version 3.
+
+For most projects in this repository Jupyter Notebook is used. If you run in some problems running it please consider the [documentation](https://jupyter.readthedocs.io/en/latest/index.html) on the Jupyter Notebook site.
+
+Most of the projects inside the repository doesn't contain the data the project is build on. Therefore, to run the code in the projects on your own you have to download the data. If this is nessary a explanition to do this is included in the projects README.md file.
 
 # List of Projects
 
-* [Analyzing Baseball Player]()
-* [Analyzing the Stroop Effect]()
-* [Analyzing NYC High School Data]()
-* [Analyzing Winning Jeopardy Strategies]()
-* [Analyzing Movie Reviews]()
-* Analyzing Star Wars Survey
-* [Visualizing The Gender Gap In College Degrees]()
-* [Visualizing Earnings Based On College Majors]()
-* [Exploring Gun Deaths In The US]()
-* [Exploring U.S. Births]("exploring_U.S._births")
+* [Analyzing Baseball Player](#Analyzing-Baseball-Player)
+* [Analyzing The Stroop Effect](#Analyzing-The-Stroop-Effect)
+* [Analyzing NYC High School Data](#Analyzing-NYC-High-School-Data)
+* [Analyzing Winning Jeopardy Strategies](#Analyzing-Winning-Jeopardy-Strategies)
+* [Analyzing Movie Reviews](#Analyzing-Movie-Reviews)
+* [Analyzing Star Wars Survey Data](#Analyzing-Star-Wars-Survey-Data)
+* [Visualizing The Gender Gap In College Degrees](#Visualizing-The-Gender-Gap-In-College-Degrees)
+* [Visualizing Earnings Based On College Majors](#Visualizing-Earnings-Based-On-College-Majors)
+* [Exploring Gun Deaths In The US](#Exploring-Gun-Deaths-In The-US)
+* [Exploring U.S. Births](#Exploring-U.S.-Births)
 
 # Projects Short Description
 
