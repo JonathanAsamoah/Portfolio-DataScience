@@ -14,16 +14,16 @@ Most of the projects inside the repository doesn't contain the data the project 
 
 # List of Projects
 
-* [Analyzing Baseball Player](#Analyzing-Baseball-Player)
-* [Analyzing The Stroop Effect](#Analyzing-The-Stroop-Effect)
-* [Analyzing NYC High School Data](#Analyzing-NYC-High-School-Data)
-* [Analyzing Winning Jeopardy Strategies](#Analyzing-Winning-Jeopardy-Strategies)
-* [Analyzing Movie Reviews](#Analyzing-Movie-Reviews)
-* [Analyzing Star Wars Survey Data](#Analyzing-Star-Wars-Survey-Data)
-* [Visualizing The Gender Gap In College Degrees](#Visualizing-The-Gender-Gap-In-College-Degrees)
-* [Visualizing Earnings Based On College Majors](#Visualizing-Earnings-Based-On-College-Majors)
-* [Exploring Gun Deaths In The US](#Exploring-Gun-Deaths-In The-US)
-* [Exploring U.S. Births](#Exploring-U.S.-Births)
+* [Analyzing Baseball Player](##Analyzing-Baseball-Player)
+* [Analyzing The Stroop Effect](##Analyzing-The-Stroop-Effect)
+* [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
+* [Analyzing Winning Jeopardy Strategies](##Analyzing-Winning-Jeopardy-Strategies)
+* [Analyzing Movie Reviews](##Analyzing-Movie-Reviews)
+* [Analyzing Star Wars Survey Data](##Analyzing-Star-Wars-Survey-Data)
+* [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
+* [Visualizing Earnings Based On College Majors](##Visualizing-Earnings-Based-On-College-Majors)
+* [Exploring Gun Deaths In The US](##Exploring-Gun-Deaths-In The-US)
+* [Exploring U.S. Births](##Exploring-U.S.-Births)
 
 # Projects Short Description
 
