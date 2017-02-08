@@ -1,0 +1,8 @@
+os
+io
+urllib
+IPython
+pandas
+numpy
+scipy
+matplotlib
