@@ -1,8 +1,8 @@
 # Portfolio
 
-This repository contains some of my projects in the area of Data Science. The projects are mostly related to the common tasks in the domain of Data Science data wrangling, visuliatzion, statistics and machine learning.
+This repository contains some of my projects in the area of Data Science. The projects are mostly related to the common tasks in the domain of Data Science data wrangling, visualization, statistics and machine learning.
 The [Remarks](#Remarks) section of this document contians some general informations to run the projects.
-The [List of Projects](#List-of-Projects) section list all projects in this repository and is followed by the [Projects Short Description](#Projects-Short-Description) section that contains a short explanition of the projects, a link to the project, highlights the technologies and the data used.
+The [List of Projects](#List-of-Projects) section lists all projects in this repository and is followed by the [Projects Short Description](#Projects-Short-Description) section that contains a short explanition of the projects, a link to the project, highlights the technologies and the data used.
 
 # Remarks
 
