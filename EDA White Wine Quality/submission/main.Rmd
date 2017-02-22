@@ -1,0 +1,560 @@
+---
+title: "EDA White Wine Quality"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Project Description:
+In this project the quality of white wine is explored.
+
+Therfore, a White Wine Quality dataset provided by [Udacity]() is used. The [dataset](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityWhites.csv) contains 4,988 entries representing a wine with 11 variables describing the chemical properties of the wine, 1 variable represents the alcohol percentage and for each wine 1  variable represents its quality is reated by at least 3 wine experts, providing a rating between 0 (very bad) and 10 (very excellent)
+
+# Point of Exploration
+Which chemical properties influence the quality of white wines?
+
+# Import Libaries
+## Set package repo
+
+```{r}
+# Set the link to the repo in the options
+country.code <- 'de'  
+url.pattern <- 'http://'  
+repo.data.frame <- subset(getCRANmirrors(), CountryCode == country.code & grepl(url.pattern, URL))
+options(repos = repo.data.frame$URL)
+```
+
+## Install the pacman and the libaries if nessary
+
+```{r}
+# Installs the packagemanger pacman if nesseary
+suppressMessages(if (!require("pacman")) install.packages("pacman"))
+    
+# Defines the used packages
+packages <-c("ggplot2", "knitr", "dplyr", "ggthemes", "GGally", "psych")
+
+# Install the packages with the packetmanger
+pacman::p_load(packages)
+```
+
+## Load Libaries
+
+```{r}
+suppressMessages(library("ggplot2"))
+suppressMessages(library("knitr"))
+suppressMessages(library("dplyr"))
+suppressMessages(library("plyr"))
+suppressMessages(library("ggthemes"))
+suppressMessages(library("GGally"))
+suppressMessages(library("psych"))
+suppressMessages(library("grid"))
+```
+
+# Set Global Varibales
+
+```{r}
+# Set url to data resource
+URL <- "https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityWhites.csv"
+# Set local path to data    
+PATH <- paste('data/', tail(strsplit(URL, "/")[[1]],1))
+
+# Set ploting theme
+theme_set(theme_minimal(12)) 
+
+#opts_chunk$set(fig.width = 6, fig.height = 6)
+library("repr")
+options(repr.plot.width=4, repr.plot.height=3)
+```
+
+# Project Preparation
+## Define individual functions
+
+```{r}
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+    # Generates a grid of plots from a given list of plots
+    #
+    # Args:
+    #  plotlist: 
+    #  file:
+    #  cols: 
+    #  layout: 
+    #
+    # Returns:
+    # None
+    
+
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+
+  numPlots = length(plots)
+
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                    ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+
+ if (numPlots==1) {
+    print(plots[[1]])
+
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+```
+
+## Download the data
+
+```{r}
+load_from_online_source <- function (url){
+    # Downloads a file from a give online source and stores it to the disk
+    #
+    # Args:
+    #  url: String representing the online resource
+    #
+    # Returns:
+    #  None
+    
+    # Create the dir if not exits
+    ifelse(!dir.exists('data'), dir.create('data'), FALSE)
+    
+    # Return the last element of url as filename
+    filename <- tail(strsplit(URL, "/")[[1]],1)
+    
+    # Set path var for the stored file
+    path <- paste('data/', filename)
+    
+    # Download the file to path
+    download.file(url, path, mode="wb")
+}
+
+#Downloads the data to the data folder of a local repository after you run it once you can uncomment this lines.
+#To prevent the code from downloading the data every time you run the code.
+ 
+#load_from_online_source(URL)
+```
+
+## Load the Dataset
+
+```{r}
+# Load the data from file
+data <-read.csv(PATH,
+                header=TRUE,
+                sep = ',',  
+                na.strings = "?")
+
+# Rename the x column to id
+names(data)[names(data) == "X"] <- "id"
+
+# Inspect the first 5 rows
+head(data)
+
+```
+
+# Data Exploration
+## Summary of the dataset
+### Explore the cloumn and entrie count
+
+```{r}
+dim(data)
+```
+
+### Explore the column names
+
+```{r}
+names(data)
+```
+
+### Column types
+
+```{r}
+str(data)
+```
+
+### Five-number summary
+
+```{r}
+summary(data)
+```
+
+The dataset consists of 13 variables, with about 4,898 observations. 
+The quality column range from 3 to 9. The quality column which interests us most has a median at 6, the min value at 3 and the max value at 9.
+
+## Univariate Plots Section
+### Explore the wine quality
+
+```{r}
+# Set the figsize
+options(repr.plot.width=4, repr.plot.height=3)
+
+qplot(x = quality, data = data, bins=30) +
+ geom_bar(color = 'black', fill = '#099DD9') +
+ xlim(3,9) 
+```
+
+The point estimators mean, modus from the five-number summary already indicate, that the column quality is normal distributed. Now the bar plot hardens that the quality column is normal distributed around the value 6.
+
+### Explore chemical properties
+
+```{r}
+# Set the figsize
+options(repr.plot.width=12, repr.plot.height=6)
+
+p1 <- qplot(x = fixed.acidity, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)
+
+p2 <- qplot(x = volatile.acidity, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p3 <- qplot(x = citric.acid, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p4 <- qplot(x = residual.sugar, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p5 <- qplot(x = chlorides, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)
+
+p6 <- qplot(x = free.sulfur.dioxide, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p7 <- qplot(x = free.sulfur.dioxide, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p8 <- qplot(x = density, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)
+
+p9 <- qplot(x = pH, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)
+
+p10 <- qplot(x = sulphates, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+p11 <- qplot(x = alcohol, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30) 
+
+multiplot(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, cols=3)
+```
+
+```{r}
+p1 <- qplot(x = residual.sugar, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)  +
+ scale_x_log10()
+
+p2 <- qplot(x = alcohol, data = data, bins=30)  +
+ geom_histogram(color = 'black', fill = '#099DD9', bins=30)  +
+ scale_x_log10()
+
+multiplot(p1, p2, cols=2)
+```
+
+## Univariate Analysis
+### Structure of the dataset
+
+There are 4898 white wines in the dataset with 13 features ('fixed.acidity' 'volatile.acidity', 'citric.acid', 'residual.sugar', 'chlorides', 'free.sulfur.dioxide', 'total.sulfur.dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'). The variable 'quality' is the only ordered factor variable. It ranges from 3 to 9, there 3 is the worst quality and 9 the best quality in the dataset.
+
+Other obersvations:
+* Most white wines have a quality of 6
+* The median qulity is 6
+
+### Features of interest
+
+The aim of this analysis is to evalute the features that are best to describe the quality of a white wine. It seems that the feature alcohol is important to determine which degree of quality a white wine  has.
+
+### Notable distributions of the dataset
+
+Most of the features in the dataset seem to be normal distributed:
+*  quality(normal)
+*  fixed.acidity(normal)
+*  chlorides(normal)
+*  ph(normal)
+*  volatile.acidity(normal)
+*  free.sulfur.dioxide(normal)
+*  citric.acid(normal)
+*  density(right skewed)
+*  alcohol(right skewed)
+*  residual.sugar(bimodal)
+
+But there are 3 exceptions "density" and "alcohol" which both are right skewed and residual.sugar which is bimodal.
+
+## Bivariate Plots Section
+### Corrleation analysis
+
+```{r}
+cor(data)
+```
+
+
+```{r}
+# Set the figsize
+options(repr.plot.width=12, repr.plot.height=12)
+
+# Plot matrix scatterplot using the libary psych
+pairs.panels(data[, 2:13])
+```
+
+The exploration of the correlation between the chemical properties of wine and its quality shows that the variables with highest influence are alcohol, density and chlorides.
+Alcohol seems to moderatly correlate postive, density to moderatly correlate negativly and chlorides weakly correlate negativly with the quality of wine.
+
+### Further analysis of correlation between alcohol, density and chlorides with the quality
+#### Correlation between alcohol and quality
+
+```{r}
+# Set the figsize
+options(repr.plot.width=6, repr.plot.height=6)
+
+# Plot scatter plot
+ggplot(aes(x = quality, y = alcohol), data = data) + geom_point() +
+    xlim(3,9)
+```
+
+```{r}
+# Plot scatter plot with jitter effect
+ggplot(aes(x = quality, y = alcohol), data = data) + geom_point() +
+    geom_point(alpha = 1/20, position = 'jitter') +
+    xlim(3,9) 
+```
+
+```{r}
+# Plot the tendency using a line chart
+quality_groups <- group_by(data, quality)
+data.alco_by_qual <- dplyr::summarise(quality_groups, alcohol_count_mean = mean(alcohol))
+
+ggplot(aes(x = quality , y = alcohol_count_mean), data = data.alco_by_qual) +
+    geom_line()
+```
+
+The scatter plot and the tendency plot showed that if the alcohol percentage increases also the quality increases. With on exception for a quality of 5. This annormaly should be further analysed.
+
+#### Correlation between density and quality
+
+```{r}
+# Plot scatter plot
+ggplot(aes(x = quality, y = density), data = data) + geom_point() +
+    xlim(3,9) +
+    ylim(0.99, 1.005)
+```
+
+```{r}
+# Plot scatter plot with jitter effect
+ggplot(aes(x = quality, y = density), data = data) + geom_point() +
+    geom_point(alpha = 1/20, position = 'jitter') +
+    xlim(3,9) +
+    ylim(0.99, 1.005) 
+```
+
+```{r}
+# Plot the tendency using a line chart
+quality_groups <- group_by(data, quality)
+data.dens_by_qual <- dplyr::summarise(quality_groups,
+                              dens_count_mean = mean(density))
+
+ggplot(aes(x = quality, y = dens_count_mean), data = data.dens_by_qual) +
+    geom_line()
+```
+
+As we already have seen in the analysis of the correlation between density and quality there is a cleary tendency in the data. This time a negative trend, so if the density decreases also the quality decreases.
+But again we have a unexpected uptrend at a quality of 5.
+
+#### Correlation between chlorides and quality
+
+```{r}
+# Plot scatter plot
+ggplot(aes(x = quality, y = chlorides), data = data) + geom_point() +
+    xlim(3,9)
+```
+
+```{r}
+# Plot scatter plot with jitter effect
+ggplot(aes(x = quality, y = chlorides), data = data) + geom_point() +
+    geom_point(alpha = 1/20, position = 'jitter') +
+    xlim(3,9)
+```
+
+```{r}
+# Plot the tendency using a line chart
+quality_groups <- group_by(data, quality)
+data.chlor_by_qual <- dplyr::summarise(quality_groups,
+                              chlor_count_mean = mean(chlorides))
+
+ggplot(aes(x = quality, y = chlor_count_mean), data = data.chlor_by_qual) +
+    geom_line()
+```
+
+Again the analysis of the correlation between density and quality shows a cleary negative tendency in the data. But as we have seen before there is discrepancy at a quality of 5.
+
+### Further analysis of the discrepancy at a quality of 5
+
+I expect the reason for the discrepancy at a quality of 5 is a mucher higher variance for the features at a quality of five and therefore, outliers that distort the results.
+To furhter analysis this I use boxplot, to show the variance at the different quality levels and highlight the outliers.
+
+#### Boxplots alcohol and quailty
+
+```{r}
+# Set the figsize
+options(repr.plot.width=5, repr.plot.height=5)
+
+# Boxplot
+ggplot(aes(x = quality, y = alcohol), data = data) + 
+  geom_boxplot(outlier.colour="red", outlier.size=4) +
+  scale_x_continuous(breaks = 3:9) +
+  ylim(7,15) +
+  facet_wrap( ~quality, scales="free") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+#### Boxplots density and quailty
+
+```{r}
+# Set the figsize
+options(repr.plot.width=5, repr.plot.height=5)
+
+# Boxplot
+ggplot(aes(x = quality, y = density), data = data) + 
+  geom_boxplot(outlier.colour="red", outlier.size=4) +
+  scale_x_continuous(breaks = 3:9) +
+  ylim(0.98,1.01) +
+  facet_wrap( ~quality, scales="free") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+#### Boxplots chlorides and quailty
+
+```{r}
+# Set the figsize
+options(repr.plot.width=5, repr.plot.height=5)
+
+# Boxplot
+ggplot(aes(x = quality, y = chlorides), data = data) + 
+  geom_boxplot(outlier.colour="red", outlier.size=4) +
+  scale_x_continuous(breaks = 3:9) +
+  #ylim(0.98,1.01) +
+  facet_wrap( ~quality, scales="free") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+As already assumed, the boxplots shows that threre are a lot more outliers at a quality of 5 for the features in a diverging direction that causes the discrepancy in the tendency.
+
+## Bivariate Analysis
+
+### Features of interest relationships
+
+As we already expected after the analysis based on a single variable, the feature alcohol has the strongest influence on the quality of a white wine. And generally a higher alcohol percentage seems to lead to a higher quality for all the quality levels expect at level 5. 
+
+### Further relationships
+
+In addtion to the feature alcohol we found to two orther features that influence the quality of a white wine. This is the density of a wine and percentage of chlorides which both influence white wine quality in a negative way.
+
+## Multivariate Plots Section
+
+```{r}
+# Bin the features alchol and quality
+data$alcoholBins <- cut(data$alcohol, breaks=seq(8, 15, 2), labels=c("low", "medium", "high"))
+data$qualityBins <- cut(data$quality, breaks=seq(3,9,2), labels=c("low", "medium", "high"))
+```
+
+```{r}
+# Set the figsize
+options(repr.plot.width=6, repr.plot.height=6)
+
+ggplot(aes(x=quality, y=density), data=subset(data, !is.na(alcoholBins))) +
+    geom_line(aes(color = alcoholBins), stat = 'summary', fun.y = sum)
+```
+
+```{r}
+ggplot(aes(x=quality, y=chlorides), data=subset(data, !is.na(alcoholBins))) +
+    geom_line(aes(color = alcoholBins), stat = 'summary', fun.y = sum)
+```
+
+```{r}
+ggplot(aes(y=chlorides, x= round(alcohol)), data=subset(data, !is.na(qualityBins))) +
+    geom_line(aes(color = qualityBins), stat = 'summary', fun.y = sum)
+```
+
+```{r}
+ggplot(aes(y=density, x= round(alcohol)), data=subset(data, !is.na(qualityBins))) +
+    geom_line(aes(color = qualityBins), stat = 'summary', fun.y = sum)
+```
+
+## Multivariate Analysis
+
+The analysis of the relaitonship of multiple features showed some interesting insights.
+At a high quality the density for different alcohol percentages does not relly differ, 
+at a low to medium quality of wine the density have a strong inluence on the quality.
+Also this effect is shown for the amount of chlorides for different alcohol percentages does not really differ at a high quality, 
+at a low to medium quality of wine the density have a strong inluence on the quality.
+
+# Final Plots and Summary
+
+## Final plots
+
+```{r}
+# Set the figsize
+options(repr.plot.width=4, repr.plot.height=3)
+
+qplot(x = quality, data = data, bins=30) +
+ geom_bar(color = 'black', fill = '#099DD9') +
+ xlim(3,9) 
+```
+
+The quality of white wines seems to be a normal distributed with a little left skewness. The quality ranges from 3 to 9 so there are no wines that the experts rated below 3 and none of the wines gained a perfect rating.
+The most wines have a rating of 6, so the most wines have a medium quality.
+
+```{r}
+# Plot the tendency using a line chart
+quality_groups <- group_by(data, quality)
+data.alco_by_qual <- dplyr::summarise(quality_groups, alcohol_count_mean = mean(alcohol))
+
+ggplot(aes(x = quality , y = alcohol_count_mean), data = data.alco_by_qual) +
+    geom_line()
+```
+
+There is a clear tendency of the influence of some features for the wine quality. For example if the alcohol percentage increases also the average quality of the wines increase, with on exception the quality at a level of 5.
+
+```{r}
+# Set the figsize
+options(repr.plot.width=5, repr.plot.height=5)
+
+# Boxplot
+ggplot(aes(x = quality, y = alcohol), data = data) + 
+  geom_boxplot(outlier.colour="red", outlier.size=4) +
+  scale_x_continuous(breaks = 3:9) +
+  ylim(7,15) +
+  facet_wrap( ~quality, scales="free") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+The plot shows that the cause for the annormally at a quality of 5 is caused by the outliers at the level of five.
+
+## Reflection
+
+There are 4898 white wines in the dataset with 13 features. The dataset is analyzed for the features that have the strongest influence for the quality of a white wine.
+
+I identified the three most influencing features for the quality for a white wine. That are the percentage of alcohol, chlorides and the density of a white wine. 
+
+Also I could identifie the discrepancy at a quality level of 5, that is caused by the outliers at the level at 5 that leads to this discrepnacy.
+
