@@ -19,6 +19,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
 * [Analyzing Winning Jeopardy Strategies](##Analyzing-Winning-Jeopardy-Strategies)
 * [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
+* [Wrangling OpenStreetMap Data](##Wrangling-OpenStreetMap-Data)
 * [Analyzing Movie Reviews](##Analyzing-Movie-Reviews)
 * [Analyzing Star Wars Survey Data](##Analyzing-Star-Wars-Survey-Data)
 * [Visualizing Earnings Based On College Majors](##Visualizing-Earnings-Based-On-College-Majors)
@@ -79,6 +80,16 @@ Visulaize gender gap in bachelor college majors.
  
 ### Data
 * [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
+
+## [Wrangling OpenStreetMap Data](https://github.com/JonathanAsamoah/Portfolio/tree/master/Wrangling%20OpenStreetMap%20Data)
+Wrangling data form OpenStreetMap and transform it for MongoDB
+
+### Languages/Technologies: 
+* Python (xml, regex)
+ * MongoDB
+ 
+### Data
+* [OpenStreetMap: Munich](http://overpass-api.de/api/map?bbox=11.4388,48.0593,11.6448,48.2507)
 
 ## [Analyzing Movie Reviews](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Movie%20Reviews)
 Comparison of Fandango and Metacritic movie ratings.
