@@ -19,7 +19,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
 * [Analyzing Winning Jeopardy Strategies](##Analyzing-Winning-Jeopardy-Strategies)
 * [Visualizing The Gender Gap In College Degrees](##Visualizing-The-Gender-Gap-In-College-Degrees)
-* [EDA White Wine Quality](##EDA-White-Wine-Quality)
+* [Exploratory Data Analysis White Wine Quality](##Exploratory-Data-Analysis-White-Wine-Quality)
 * [Wrangling OpenStreetMap Data](##Wrangling-OpenStreetMap-Data)
 * [Analyzing Movie Reviews](##Analyzing-Movie-Reviews)
 * [Analyzing Star Wars Survey Data](##Analyzing-Star-Wars-Survey-Data)
@@ -82,7 +82,7 @@ Visulaize gender gap in bachelor college majors.
 ### Data
 * [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
-## [EDA White Wine Quality](https://github.com/JonathanAsamoah/Portfolio/tree/master/EDA%20White%20Wine%20Quality)
+## [Exploratory Data Analysis White Wine Quality](https://github.com/JonathanAsamoah/Portfolio/tree/master/Exploratory%20Data%20Analysis%20White%20Wine%20Quality)
 In this project exploratory data analysis is used to identify the factors that influence the quality of white wine at most.
 
 ### Languages/Technologies: 
