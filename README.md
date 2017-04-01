@@ -14,6 +14,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 
 # List of Projects
 
+* [Machine Learning Enron Email Dataset PoI Identifier](##Machine-Learning-Enron-Email-Dataset-PoI-Identifier)
 * [Analyzing Baseball Player](##Analyzing-Baseball-Player)
 * [Analyzing The Stroop Effect](##Analyzing-The-Stroop-Effect)
 * [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
@@ -29,6 +30,17 @@ Most of the projects inside the repository doesn't contain the data the project 
 * [Exploring U.S. Births](##Exploring-U.S.-Births)
 
 # Project Short Descriptions
+
+## [Machine Learning Enron Email Dataset PoI Identifier](https://github.com/JonathanAsamoah/Portfolio/tree/master/Machine%20Learning%20Enron%20Email%20Dataset%20PoI%20Identifier)
+In this project data from the Enron email dataset and public Enron financial data is used to create an classifier that allows to identify employes of Enron who may have committed fraud. The results found here can be used as a starting point for the identification of possible fraud in similar cases and in this way help to prevent and detect fraud.
+
+### Languages/Technologies: 
+* Python (pandas, matplotlib, sklearn)
+* Visualizing Data
+* Machine Learning (DecisionTree, SVM, AdaBoost, RandomForest, k-Nearest Neighbors, Naive Bayes, PCA, Feature Selection, Normalization)
+
+### Data: 
+* Original [Carnegie Mellon School of Computer Science: Enron Email Dataset](https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tgzhttps://www.cs.cmu.edu/~./enron/)
 
 ## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
 In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
