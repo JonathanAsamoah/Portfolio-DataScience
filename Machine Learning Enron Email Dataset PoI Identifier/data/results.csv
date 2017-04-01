@@ -1,0 +1,217 @@
+,Classifier,F2-Score,BestParameters,FeatureNumber,Normalized,PCA,PCAComponents
+0,Naive Bayes,0.337995337995338,{},4,False,True,1
+1,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",4,True,True,1
+2,Decission Tree,0.2630702630702631,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",4,False,True,1
+3,AdaBoost,0.30888342426803966,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",4,False,True,1
+4,Random Forest,0.32293464111645925,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",4,False,True,1
+5,k-Nearest Neighbors,0.3764568764568765,"{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}",4,True,True,1
+6,Naive Bayes,0.38111888111888115,{},4,False,True,2
+7,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",4,True,True,2
+8,Decission Tree,0.5454545454545454,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}",4,False,True,2
+9,AdaBoost,0.4612054612054613,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",4,False,True,2
+10,Random Forest,0.36268277177368086,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 50}",4,False,True,2
+11,k-Nearest Neighbors,0.17959313413858868,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",4,True,True,2
+12,Naive Bayes,0.37529137529137535,{},4,False,True,3
+13,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",4,True,True,3
+14,Decission Tree,0.5617715617715618,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}",4,False,True,3
+15,AdaBoost,0.40112665112665113,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",4,False,True,3
+16,Random Forest,0.3384721339266794,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 1}",4,False,True,3
+17,k-Nearest Neighbors,0.3181818181818182,"{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'uniform'}",4,True,True,3
+18,Naive Bayes,0.38111888111888115,{},4,False,False,1
+19,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",4,True,False,1
+20,Decission Tree,0.45802682166318537,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",4,False,False,1
+21,AdaBoost,0.4079102715466352,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",4,False,False,1
+22,Random Forest,0.40404040404040403,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 5}",4,False,False,1
+23,k-Nearest Neighbors,0.35742035742035744,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",4,True,False,1
+24,Naive Bayes,0.38111888111888115,{},4,False,False,2
+25,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",4,True,False,2
+26,Decission Tree,0.47540338449429365,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",4,False,False,2
+27,AdaBoost,0.39604335058880513,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",4,False,False,2
+28,Random Forest,0.41268657527398783,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",4,False,False,2
+29,k-Nearest Neighbors,0.35742035742035744,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",4,True,False,2
+30,Naive Bayes,0.38111888111888115,{},4,False,False,3
+31,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",4,True,False,3
+32,Decission Tree,0.45802682166318537,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",4,False,False,3
+33,AdaBoost,0.4172342808706445,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",4,False,False,3
+34,Random Forest,0.3434343434343435,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",4,False,False,3
+35,k-Nearest Neighbors,0.35742035742035744,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",4,True,False,3
+36,Naive Bayes,0.337995337995338,{},5,False,True,1
+37,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",5,True,True,1
+38,Decission Tree,0.3794059475877658,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 3}",5,False,True,1
+39,AdaBoost,0.2630702630702631,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",5,False,True,1
+40,Random Forest,0.3228438228438229,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",5,False,True,1
+41,k-Nearest Neighbors,0.1883343928798474,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",5,True,True,1
+42,Naive Bayes,0.37529137529137535,{},5,False,True,2
+43,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",5,True,True,2
+44,Decission Tree,0.3433745741438049,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 5}",5,False,True,2
+45,AdaBoost,0.35109412731790357,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",5,False,True,2
+46,Random Forest,0.3342869251960161,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 5}",5,False,True,2
+47,k-Nearest Neighbors,0.2505827505827506,"{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'uniform'}",5,True,True,2
+48,Naive Bayes,0.37529137529137535,{},5,False,True,3
+49,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",5,True,True,3
+50,Decission Tree,0.44426785335876245,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 3}",5,False,True,3
+51,AdaBoost,0.4352970262061171,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",5,False,True,3
+52,Random Forest,0.2501344809037117,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",5,False,True,3
+53,k-Nearest Neighbors,0.1941997396542851,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",5,True,True,3
+54,Naive Bayes,0.46959101504556056,{},5,False,False,1
+55,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",5,True,False,1
+56,Decission Tree,0.3535176944267853,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",5,False,False,1
+57,AdaBoost,0.37322525958889596,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",5,False,False,1
+58,Random Forest,0.3426573426573427,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 5}",5,False,False,1
+59,k-Nearest Neighbors,0.364786728423092,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",5,True,False,1
+60,Naive Bayes,0.46959101504556056,{},5,False,False,2
+61,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",5,True,False,2
+62,Decission Tree,0.3535176944267853,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",5,False,False,2
+63,AdaBoost,0.3115596524687434,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",5,False,False,2
+64,Random Forest,0.3473193473193473,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",5,False,False,2
+65,k-Nearest Neighbors,0.364786728423092,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",5,True,False,2
+66,Naive Bayes,0.46959101504556056,{},5,False,False,3
+67,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",5,True,False,3
+68,Decission Tree,0.3535176944267853,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",5,False,False,3
+69,AdaBoost,0.318075863530409,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 2}",5,False,False,3
+70,Random Forest,0.31429681429681433,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}",5,False,False,3
+71,k-Nearest Neighbors,0.364786728423092,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",5,True,False,3
+72,Naive Bayes,0.337995337995338,{},6,False,True,1
+73,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",6,True,True,1
+74,Decission Tree,0.3316733771279226,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",6,False,True,1
+75,AdaBoost,0.37019041564496113,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",6,False,True,1
+76,Random Forest,0.35742035742035744,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 10}",6,False,True,1
+77,k-Nearest Neighbors,0.19813519813519814,"{'metric': 'euclidean', 'n_neighbors': 4, 'weights': 'distance'}",6,True,True,1
+78,Naive Bayes,0.37529137529137535,{},6,False,True,2
+79,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",6,True,True,2
+80,Decission Tree,0.3813131313131313,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",6,False,True,2
+81,AdaBoost,0.4182953798338414,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",6,False,True,2
+82,Random Forest,0.33494283494283494,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",6,False,True,2
+83,k-Nearest Neighbors,0.2677322677322677,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",6,True,True,2
+84,Naive Bayes,0.37529137529137535,{},6,False,True,3
+85,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",6,True,True,3
+86,Decission Tree,0.3600595208986817,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",6,False,True,3
+87,AdaBoost,0.4314880923272532,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",6,False,True,3
+88,Random Forest,0.22338772338772342,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 1}",6,False,True,3
+89,k-Nearest Neighbors,0.21084975630430178,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",6,True,True,3
+90,Naive Bayes,0.46959101504556056,{},6,False,False,1
+91,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",6,True,False,1
+92,Decission Tree,0.31457936003390546,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 7}",6,False,False,1
+93,AdaBoost,0.2871900826446281,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'best', 'n_estimators': 1}",6,False,False,1
+94,Random Forest,0.4420428056791693,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5, 'n_estimators': 1}",6,False,False,1
+95,k-Nearest Neighbors,0.19428124323229215,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",6,True,False,1
+96,Naive Bayes,0.46959101504556056,{},6,False,False,2
+97,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",6,True,False,2
+98,Decission Tree,0.31457936003390546,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 7}",6,False,False,2
+99,AdaBoost,0.4338842975206612,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",6,False,False,2
+100,Random Forest,0.3106439015529925,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",6,False,False,2
+101,k-Nearest Neighbors,0.19428124323229215,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",6,True,False,2
+102,Naive Bayes,0.46959101504556056,{},6,False,False,3
+103,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",6,True,False,3
+104,Decission Tree,0.31457936003390546,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 7}",6,False,False,3
+105,AdaBoost,0.3608020767111676,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",6,False,False,3
+106,Random Forest,0.49459631277813093,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",6,False,False,3
+107,k-Nearest Neighbors,0.19428124323229215,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",6,True,False,3
+108,Naive Bayes,0.3228438228438229,{},7,False,True,1
+109,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",7,True,True,1
+110,Decission Tree,0.2470862470862471,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 3}",7,False,True,1
+111,AdaBoost,0.17270608179699087,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",7,False,True,1
+112,Random Forest,0.2122120303938486,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 5}",7,False,True,1
+113,k-Nearest Neighbors,0.26709401709401714,"{'metric': 'euclidean', 'n_neighbors': 4, 'weights': 'distance'}",7,True,True,1
+114,Naive Bayes,0.3228438228438229,{},7,False,True,2
+115,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",7,True,True,2
+116,Decission Tree,0.3898601398601399,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",7,False,True,2
+117,AdaBoost,0.3493324856961221,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 1}",7,False,True,2
+118,Random Forest,0.22462386098749737,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",7,False,True,2
+119,k-Nearest Neighbors,0.2843822843822844,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",7,True,True,2
+120,Naive Bayes,0.3053613053613054,{},7,False,True,3
+121,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",7,True,True,3
+122,Decission Tree,0.25602175602175603,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}",7,False,True,3
+123,AdaBoost,0.27084027084027085,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",7,False,True,3
+124,Random Forest,0.36978173341809706,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",7,False,True,3
+125,k-Nearest Neighbors,0.1549057003602458,"{'metric': 'cityblock', 'n_neighbors': 1, 'weights': 'uniform'}",7,True,True,3
+126,Naive Bayes,0.46959101504556056,{},7,False,False,1
+127,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",7,True,False,1
+128,Decission Tree,0.3098114007204916,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 7}",7,False,False,1
+129,AdaBoost,0.3405760905760906,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",7,False,False,1
+130,Random Forest,0.3413858868404323,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 1}",7,False,False,1
+131,k-Nearest Neighbors,0.19764326582508399,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",7,True,False,1
+132,Naive Bayes,0.46959101504556056,{},7,False,False,2
+133,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",7,True,False,2
+134,Decission Tree,0.29921593557957193,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",7,False,False,2
+135,AdaBoost,0.28480610298792114,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",7,False,False,2
+136,Random Forest,0.29953379953379955,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 1}",7,False,False,2
+137,k-Nearest Neighbors,0.19764326582508399,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",7,True,False,2
+138,Naive Bayes,0.46959101504556056,{},7,False,False,3
+139,SVM,0.09090909090909091,"{'C': 10, 'gamma': 0.001, 'kernel': 'linear'}",7,True,False,3
+140,Decission Tree,0.29921593557957193,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",7,False,False,3
+141,AdaBoost,0.35304089849544396,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 1}",7,False,False,3
+142,Random Forest,0.34615384615384615,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",7,False,False,3
+143,k-Nearest Neighbors,0.19764326582508399,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",7,True,False,3
+144,Naive Bayes,0.2470862470862471,{},8,False,True,1
+145,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",8,True,True,1
+146,Decission Tree,0.20357420357420358,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}",8,False,True,1
+147,AdaBoost,0.19813519813519814,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",8,False,True,1
+148,Random Forest,0.20357420357420358,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 5}",8,False,True,1
+149,k-Nearest Neighbors,0.2520769828462136,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",8,True,True,1
+150,Naive Bayes,0.3228438228438229,{},8,False,True,2
+151,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",8,True,True,2
+152,Decission Tree,0.2094273248119402,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5}",8,False,True,2
+153,AdaBoost,0.2016165652529289,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 2}",8,False,True,2
+154,Random Forest,0.23578985117446655,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5, 'n_estimators': 1}",8,False,True,2
+155,k-Nearest Neighbors,0.20862470862470864,"{'metric': 'cityblock', 'n_neighbors': 3, 'weights': 'uniform'}",8,True,True,2
+156,Naive Bayes,0.3228438228438229,{},8,False,True,3
+157,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",8,True,True,3
+158,Decission Tree,0.3164714073804983,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 3}",8,False,True,3
+159,AdaBoost,0.3815968413870512,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",8,False,True,3
+160,Random Forest,0.4874577636815399,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",8,False,True,3
+161,k-Nearest Neighbors,0.1549057003602458,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",8,True,True,3
+162,Naive Bayes,0.3696581196581197,{},8,False,False,1
+163,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",8,True,False,1
+164,Decission Tree,0.29921593557957193,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",8,False,False,1
+165,AdaBoost,0.3610690009291408,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",8,False,False,1
+166,Random Forest,0.3778544687635597,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5, 'n_estimators': 1}",8,False,False,1
+167,k-Nearest Neighbors,0.13270820089001906,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",8,True,False,1
+168,Naive Bayes,0.3696581196581197,{},8,False,False,2
+169,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",8,True,False,2
+170,Decission Tree,0.3098114007204916,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 7}",8,False,False,2
+171,AdaBoost,0.29012945096861176,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",8,False,False,2
+172,Random Forest,0.2801970756516211,"{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 1}",8,False,False,2
+173,k-Nearest Neighbors,0.13270820089001906,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",8,True,False,2
+174,Naive Bayes,0.3696581196581197,{},8,False,False,3
+175,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",8,True,False,3
+176,Decission Tree,0.35749099385463023,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",8,False,False,3
+177,AdaBoost,0.36434525070888707,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'random', 'n_estimators': 2}",8,False,False,3
+178,Random Forest,0.37873742419196965,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",8,False,False,3
+179,k-Nearest Neighbors,0.13270820089001906,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",8,True,False,3
+180,Naive Bayes,0.2470862470862471,{},9,False,True,1
+181,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",9,True,True,1
+182,Decission Tree,0.20357420357420358,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}",9,False,True,1
+183,AdaBoost,0.19813519813519814,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 2}",9,False,True,1
+184,Random Forest,0.20357420357420358,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 10}",9,False,True,1
+185,k-Nearest Neighbors,0.2470862470862471,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",9,True,True,1
+186,Naive Bayes,0.3228438228438229,{},9,False,True,2
+187,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",9,True,True,2
+188,Decission Tree,0.21525483063944606,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5}",9,False,True,2
+189,AdaBoost,0.15967365967365968,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 2}",9,False,True,2
+190,Random Forest,0.20357420357420358,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 50}",9,False,True,2
+191,k-Nearest Neighbors,0.24669774669774672,"{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'uniform'}",9,True,True,2
+192,Naive Bayes,0.3228438228438229,{},9,False,True,3
+193,SVM,0.0,"{'C': 1, 'gamma': 0.001, 'kernel': 'linear'}",9,True,True,3
+194,Decission Tree,0.3164714073804983,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 3}",9,False,True,3
+195,AdaBoost,0.2858058802114746,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 2}",9,False,True,3
+196,Random Forest,0.22086247086247088,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",9,False,True,3
+197,k-Nearest Neighbors,0.13270820089001906,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",9,True,True,3
+198,Naive Bayes,0.29390054390054393,{},9,False,False,1
+199,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",9,True,False,1
+200,Decission Tree,0.35749099385463023,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",9,False,False,1
+201,AdaBoost,0.41829382738473647,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'random', 'n_estimators': 1}",9,False,False,1
+202,Random Forest,0.36363636363636365,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'n_estimators': 1}",9,False,False,1
+203,k-Nearest Neighbors,0.0815850815850816,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",9,True,False,1
+204,Naive Bayes,0.29390054390054393,{},9,False,False,2
+205,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",9,True,False,2
+206,Decission Tree,0.385092180546726,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",9,False,False,2
+207,AdaBoost,0.42056661287430513,"{'base_estimator__criterion': 'gini', 'base_estimator__splitter': 'best', 'n_estimators': 2}",9,False,False,2
+208,Random Forest,0.35614890160344703,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 5}",9,False,False,2
+209,k-Nearest Neighbors,0.0815850815850816,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",9,True,False,2
+210,Naive Bayes,0.29390054390054393,{},9,False,False,3
+211,SVM,0.0543900543900544,"{'C': 1000, 'gamma': 0.001, 'kernel': 'linear'}",9,True,False,3
+212,Decission Tree,0.35749099385463023,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 7}",9,False,False,3
+213,AdaBoost,0.33264462809917356,"{'base_estimator__criterion': 'entropy', 'base_estimator__splitter': 'best', 'n_estimators': 2}",9,False,False,3
+214,Random Forest,0.33661792752701847,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 1}",9,False,False,3
+215,k-Nearest Neighbors,0.0815850815850816,"{'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'}",9,True,False,3
