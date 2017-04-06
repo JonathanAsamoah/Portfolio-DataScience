@@ -16,6 +16,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 
 * [Machine Learning Enron Email Dataset PoI Identifier](##Machine-Learning-Enron-Email-Dataset-PoI-Identifier)
 * [Analyzing Baseball Player](##Analyzing-Baseball-Player)
+* [A/B Test Free Trial Screener](##A/B-Test-Free-Trial-Screener)
 * [Analyzing The Stroop Effect](##Analyzing-The-Stroop-Effect)
 * [Analyzing NYC High School Data](##Analyzing-NYC-High-School-Data)
 * [Analyzing Winning Jeopardy Strategies](##Analyzing-Winning-Jeopardy-Strategies)
@@ -51,6 +52,16 @@ In this project the salary evolvment of MBA players between 1985 and 2015 is ana
 
 ### Data: 
 * [Lahman: Baseball Data](http://seanlahman.com/files/database/baseballdatabank-master_2016-03-02.zip)
+
+## [A/B Test Free Trial Screener](https://github.com/JonathanAsamoah/Portfolio/tree/master/AB%20Test%20Free Trial%20Screener)
+In this project a A/B Test is performed to test the implementation of a new feature in the registration process of Udacity. 
+
+### Languages/Technologies: 
+* Python (scipy)
+* Statistics
+
+### Data: 
+* [Udacity: Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)
 
 ## [Analyzing the Stroop Effect](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20the%20Stroop%20Effect)
 Analyzed the Stroop effect using descriptive statistics to provide an intuition about the data, and inferential statistics to draw a conclusion based on the results.
