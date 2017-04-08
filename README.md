@@ -44,7 +44,7 @@ In this project data from the Enron email dataset and public Enron financial dat
 * Original [Carnegie Mellon School of Computer Science: Enron Email Dataset](https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tgzhttps://www.cs.cmu.edu/~./enron/)
 
 ## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
-In this project the salary evolvment of MBA players between 1985 and 2015 is analyzed.
+In this project the salary evolvment of MBL players between 1985 and 2015 is analyzed.
 
 ### Languages/Technologies: 
 * Python (pandas, matplotlib)
@@ -81,7 +81,7 @@ Analyzing relationship between SAT scores and demographic factors.
 * Python (pandas, matplotlib, Basemap, regex)
 * Statistcs
 * Visualizing Data
- 
+
 ### Data
 [New York City: SAT scores of students](https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4)
 
@@ -101,7 +101,7 @@ Visulaize gender gap in bachelor college majors.
 ### Languages/Technologies: 
 * Python (pandas, matplotlib)
 * Visualizing Data
- 
+
 ### Data
 * [Randalolson: Percent Bachelors Degrees Women USA](http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv)
 
@@ -112,7 +112,7 @@ In this project exploratory data analysis is used to identify the factors that i
 * R (dplyr, ggplot2)
 * Visualizing Data
 * Exploratory Data Analysis
- 
+
 ### Data
 [Udacity: White Wine Quality](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityWhites.csv)
 
@@ -121,8 +121,8 @@ Wrangling data form OpenStreetMap and transform it for MongoDB
 
 ### Languages/Technologies: 
 * Python (xml, regex)
- * MongoDB
- 
+* MongoDB
+
 ### Data
 * [OpenStreetMap: Munich](http://overpass-api.de/api/map?bbox=11.4388,48.0593,11.6448,48.2507)
 
@@ -151,7 +151,7 @@ Visulaize relaions between college majors and other factors.
 ### Languages/Technologies: 
 * Python (pandas, matplotlib)
 * Visualizing Data
- 
+
 ### Data
 * [FiveThirtyEight: College Major Dataset](https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv)
 

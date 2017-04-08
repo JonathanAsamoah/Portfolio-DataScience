@@ -1,8 +1,8 @@
 # Analyzing Baseball Player
 
-In this project the salary increasement of MBA players between 1985 and 2015 is analyzed. 
+In this project the salary increasement of MBL players between 1985 and 2015 is analyzed. 
 
-For this analysis a [data set](http://www.seanlahman.com/baseball-archive/statistics/) provided by SeanLahman.com is used. It contains statistics related to the MBA from year 1871 till 2015.
+For this analysis a [data set](http://www.seanlahman.com/baseball-archive/statistics/) provided by SeanLahman.com is used. It contains statistics related to the MBL from year 1871 till 2015.
 We use the salary related part of the statistics in the dataset that start in the year 1985, as basis for your evaluation.
 
 # Languages/Technologies
