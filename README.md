@@ -66,7 +66,7 @@ In this project the salary evolvment of MBL players between 1985 and 2015 is ana
 ### Data: 
 * [Lahman: Baseball Data](http://seanlahman.com/files/database/baseballdatabank-master_2016-03-02.zip)
 
-## [A/B Test Free Trial Screener](https://github.com/JonathanAsamoah/Portfolio/tree/master/AB%20Test%20Free Trial%20Screener)
+## [A/B Test Free Trial Screener](https://github.com/JonathanAsamoah/Portfolio/tree/master/AB%20Test%20Free%20Trial%20Screener)
 In this project a A/B Test is performed to test the implementation of a new feature in the registration process of Udacity. 
 
 ### Languages/Technologies: 
