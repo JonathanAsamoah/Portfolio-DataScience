@@ -3,9 +3,9 @@
 The interactive visualization compares the development of the number of earthquakes per year or per month with the development of the global temperature. It is realized in two different ways, one using JavaScript and D3.js and the other one using Python and Bokeh.  
 
 Directly go to:
-[D3.js](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/JS_D3.js)
-[Bokeh](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/Python_Bokeh)
-[Data Preprocessing](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/Python_Preprocessing)
+[D3.js](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/JS_D3.js)  
+[Bokeh](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/Python_Bokeh)  
+[Data Preprocessing](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature/Python_Preprocessing)  
 
 # Languages/Technologies
 
