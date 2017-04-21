@@ -15,6 +15,7 @@ Most of the projects inside the repository doesn't contain the data the project 
 # List of Projects
 
 * [Machine Learning Enron Email Dataset PoI Identifier](##Machine-Learning-Enron-Email-Dataset-PoI-Identifier)
+* [Visualizing Earthquakes in Relation to Global Temperature](##Visualizing-Earthquakes-in-Relation-to-Global-Temperature)
 * [Analyzing Baseball Player](##Analyzing-Baseball-Player)
 * [A/B Test Free Trial Screener](##A/B-Test-Free-Trial-Screener)
 * [Analyzing The Stroop Effect](##Analyzing-The-Stroop-Effect)
@@ -42,6 +43,18 @@ In this project data from the Enron email dataset and public Enron financial dat
 
 ### Data: 
 * Original [Carnegie Mellon School of Computer Science: Enron Email Dataset](https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tgzhttps://www.cs.cmu.edu/~./enron/)
+
+## [Visualizing Earthquakes in Relation to Global Temperature](https://github.com/JonathanAsamoah/Portfolio/tree/master/Visualizing%20Earthquakes%20in%20Relation%20to%20Global%20Temperature)
+The interactive visualization compares the development of the number of earthquakes per year or per month with the development of the global temperature. It is realized in two different ways, one using JavaScript and D3.js and the other one using Python and Bokeh.
+
+### Languages/Technologies: 
+* Python (pandas, Bokeh)
+* JS (D3.js)
+* Visualizing Data
+
+### Data: 
+* [Kaggle: Significant Earthquakes](https://www.kaggle.com/usgs/earthquake-database)
+* [dataokfn: Global Temperature](http://data.okfn.org/data/core/global-temp)
 
 ## [Analyzing Baseball Player](https://github.com/JonathanAsamoah/Portfolio/tree/master/Analyzing%20Baseball%20Player)
 In this project the salary evolvment of MBL players between 1985 and 2015 is analyzed.

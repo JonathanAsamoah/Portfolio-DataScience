@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .grid line {
+            stroke: lightgrey;
+            stroke-opacity: 0.7;
+            shape-rendering: crispEdges;
+        }
+
+        .grid path {
+            stroke-width: 0;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 200px;
+            height: 42px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: black;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            color: white;
+        }
+
+    </style>
+    <title>Earthquake</title>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
+<body>
+    <script>
+        // Set the dimensions and margins of the graph
+        var margin = {
+                top: 60,
+                right: 75,
+                bottom: 70,
+                left: 55
+            },
+            width = 1200 - margin.left - margin.right,
+            height = 530 - margin.top - margin.bottom;
+
+        // Add the svg
+        var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Init the data and time parser
+        var parseTimeYear = d3.timeParse("%Y");
+        var parseDate = d3.timeParse("%Y-%m-%d");
+        var formatTime = d3.timeFormat("%b-%Y");
+
+        // Init Scales
+        // Init x scale
+        var xScale = d3.scaleTime()
+            .rangeRound([0, width]);
+        // Init y scale left
+        var yScaleLeft = d3.scaleLinear()
+            .rangeRound([height, 0]);
+        // Init y scale right
+        var yScaleRight = d3.scaleLinear()
+            .rangeRound([height, 0]);
+
+
+        // Generator functions for the lines
+        // Function for the generation of the earthquake line
+        var lineEarthquake = d3.line()
+            .curve(d3.curveLinear)
+            .x(function(d) {
+                return xScale(d.date);
+            })
+            .y(function(d) {
+                return yScaleLeft(d.count);
+            });
+        // Function for the generation of the temperature line
+        var lineTemperature = d3.line()
+            .curve(d3.curveLinear)
+            .x(function(d) {
+                return xScale(d.date);
+            })
+            .y(function(d) {
+                return yScaleRight(d.temperature);
+            });
+
+
+        // Generator functions for the grid lines
+        // Function for the generation of the gridlines in x axis function
+        function make_x_gridlines() {
+            return d3.axisBottom(xScale)
+                .ticks(50)
+        }
+        // Function for the generation of the gridlines in y axis function
+        function make_y_gridlines() {
+            return d3.axisLeft(yScaleLeft)
+                .ticks(50)
+        }
+
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // Set the title
+        svg.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0 - (margin.top / 2))
+            .attr("text-anchor", "middle")
+            .style("font", "28px sans-serif")
+            .style("font-weight", "bold")
+            .style("text-transform", "uppercase")
+            .text("Earthquakes count in relation to the global temperature");
+
+        // Add the axis labels
+        // Add the left y label for earthquakes
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - margin.left)
+            .attr("x", 0 - (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .style("font", "18px sans-serif")
+            .style("font-weight", "bold")
+            .text("Earthquakes Count");
+        // Add the right y label for temperature
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", width + margin.right / 2)
+            .attr("x", 0 - (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .style("font", "18px sans-serif")
+            .style("font-weight", "bold")
+            .html("Gloabal Temperature in &deg;C");
+        // Add x label
+        svg.append("text")
+            .attr("class", "xLabel")
+            .attr("transform",
+                "translate(" + (width / 2) + " ," +
+                (height + margin.top + 0) + ")")
+            .style("text-anchor", "middle")
+            .style("font", "16px sans-serif")
+            .style("font-weight", "bold")
+            .text("Year");
+
+
+
+
+        // Import the data from file
+        d3.csv("../data/preprocessed_earthquakes.csv", function(error, data) {
+            if (error) throw error;
+
+            // Prepare the data for the visualization
+            data.forEach(function(d) {
+                // Convert the date values to datetype
+                d.date = parseDate(d.date);
+                // Convert the count values to float
+                d.count = parseFloat(d.count);
+                // Convert the temperature values to float
+                d.temperature = parseFloat(d.temperature);
+            });
+
+            // Call the inital graph update function
+            update(data);
+
+        });
+
+        // Group data per year, restructure it and return it
+        function groupByYear(data) {
+            // Group the data
+            var dataGroupedByYear = d3.nest()
+                .key(function(d) {
+                    //return d.year;
+                    return d.date.getFullYear();
+                })
+                .rollup(function(v) {
+                    return {
+                        "count": d3.sum(v, function(d) {
+                            return d.count
+                        }),
+                        "temperature": d3.mean(v, function(d) {
+                            return d.temperature
+                        })
+                    }
+                })
+                .entries(data);
+
+            // Restructure the data
+            dataGroupedByYear.forEach(function(d) {
+                d.date = parseTimeYear(d.key);
+                delete d.key;
+                d.count = d.value.count;
+                d.temperature = d.value.temperature;
+                delete d.value;
+            });
+
+            return dataGroupedByYear;
+        }
+
+        function update(data) {
+
+
+            var dataGroupedByYear = groupByYear(data);
+
+
+            var xLabels = dataGroupedByYear.map(function(d) {
+                return d.date;
+            });
+
+            xScale.domain(d3.extent(dataGroupedByYear, function(d) {
+                return d.date;
+            }));
+            yScaleLeft.domain(d3.extent(dataGroupedByYear, function(d) {
+                return d.count;
+            }));
+            yScaleRight.domain(d3.extent(dataGroupedByYear, function(d) {
+                return d.temperature;
+            }));
+
+            // Add the axis
+            // Add the left y axis for the eqrthquakes
+            svg.append("g")
+                .attr("class", "y axis left")
+                .style("font", "12px sans-serif")
+                .style("stroke", "#357EC7")
+                .call(d3.axisLeft(yScaleLeft)
+                    .ticks(10));
+            // Add the right y axis for the temperature
+            svg.append("g")
+                .attr("class", "y axis right")
+                .style("font", "12px sans-serif")
+                .style("stroke", "orange")
+                .attr("transform", "translate( " + width + ", 0 )")
+                .call(d3.axisRight(yScaleRight));
+            // Add the x Axis
+            svg.append("g")
+                .attr("class", "x axis")
+                .style("font", "12px sans-serif")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(xScale).ticks(10))
+                .selectAll("text")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-65)");
+
+            // Add the gridlines
+            // Add the x gridlines
+            svg.append("g")
+                .attr("class", "grid x")
+                .attr("transform", "translate(0," + height + ")")
+                .call(make_x_gridlines()
+                    .tickSize(-height)
+                    .tickFormat("")
+                );
+            // Add the y gridlines
+            svg.append("g")
+                .attr("class", "grid y")
+                .call(make_y_gridlines()
+                    .tickSize(-width)
+                    .tickFormat("")
+                );
+
+            // Add time label
+            svg.append("text")
+                .attr("class", "timeLabel")
+                .attr("y", (height + margin.top) / 2)
+                .attr("x", width / 2)
+                .style("font", "150px sans-serif")
+                .style("fill", "lightgrey")
+                .style("opacity", .4)
+                .style("font-weight", "bold")
+                .style("text-anchor", "middle")
+                .text("1965 to 2015");
+
+            // Add the lines
+            // Add the line for the eqrthquakes
+            svg.append("path")
+                .datum(dataGroupedByYear)
+                .attr("class", "lineEarthquake")
+                .attr("fill", "none")
+                .attr("stroke", "#357EC7")
+                .attr("stroke-linejoin", "round")
+                .attr("stroke-linecap", "round")
+                .attr("stroke-width", 1.5)
+                .attr("d", lineEarthquake);
+            // Add the line for the temperature
+            svg.append("path")
+                .datum(dataGroupedByYear)
+                .attr("class", "lineTemperature")
+                .attr("fill", "none")
+                .attr("stroke", "orange")
+                .attr("stroke-linejoin", "round")
+                .attr("stroke-linecap", "round")
+                .attr("stroke-width", 1.5)
+                .attr("d", lineTemperature);
+
+            // Add the dots for the measurements on the count of earthquakes line
+            svg.selectAll("circle")
+                .data(dataGroupedByYear)
+                .enter()
+                .append("circle")
+                .attr("r", 3)
+                .attr("fill", "#0020C2")
+                .attr("cx", function(d, i) {
+                    return xScale(d.date);
+                })
+                .attr("cy", function(d, i) {
+                    return yScaleLeft(d.count);
+                })
+                .on("mouseover", function(d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html("Year: " + formatTime(d.date) + "<br/>" + "Earthquakes Count: " + d.count + "<br/>" + "Temperature Anomaly: " + d.temperature.toFixed(2) + "&deg;C" + "<br/>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function(d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                })
+                .on("click", function(d) {
+                    updateData(data, d.date.getFullYear());
+                });
+
+            // Add top label
+            svg.append("text")
+                .attr("class", "topLabel")
+                .attr("y", 0 - 5)
+                .attr("x", width / 2)
+                .style("font", "20px sans-serif")
+                .style("fill", "grey")
+                .style("font-weight", "bold")
+                .style("text-anchor", "middle")
+                .text("Click on circle on the line to zoom in");
+        }
+
+        function updateData(data, year) {
+
+            if (year != 0) {
+                // Filter the data for a year
+                var dataPrepared = data.filter(function(d) {
+                    return d.date.getFullYear() == year;
+                });
+            } else {
+                // Group data per year
+                var dataPrepared = groupByYear(data);
+            }
+
+            // Define transistion
+            var t = d3.transition().duration(750);
+
+            // Rescale the axis
+            xScale.domain(d3.extent(dataPrepared, function(d) {
+                return d.date;
+            }));
+            yScaleLeft.domain(d3.extent(dataPrepared, function(d) {
+                return d.count;
+            }));
+            yScaleRight.domain(d3.extent(dataPrepared, function(d) {
+                return d.temperature;
+            }));
+
+            // Select the svg
+            var svg = d3.select("svg");
+
+            // Update the axis
+            // Update the left y axis for earthquakes
+            svg.select(".y.axis.left") // change the y axis
+                .transition(t)
+                .call(d3.axisLeft(yScaleLeft)
+                    .ticks(12));
+            // Update the left y axis for temperature
+            svg.select(".y.axis.right") // change the y axis
+                .transition(t)
+                .call(d3.axisRight(yScaleRight)
+                    .ticks(12));
+            // Update the x axis for the date
+            if (year != 0) {
+                svg.select(".x.axis") // change the x axis
+                    .transition(t)
+                    .call(d3.axisBottom(xScale)
+                        .tickFormat(d3.timeFormat("%B")))
+                    .selectAll("text")
+                    .transition(t)
+                    .style("text-anchor", "end")
+                    .attr("dx", "-.8em")
+                    .attr("dy", ".15em")
+                    .attr("transform", "rotate(-65)");
+            } else {
+                svg.select(".x.axis") // change the x axis
+                    .transition(t)
+                    .call(d3.axisBottom(xScale).ticks(10))
+                    .selectAll("text")
+                    .transition(t)
+                    .style("text-anchor", "end")
+                    .attr("dx", "-.8em")
+                    .attr("dy", ".15em")
+                    .attr("transform", "rotate(-65)");
+            }
+
+            // Update gridlines
+            // Update the x gridlines
+            svg.select(".grid.x")
+                .transition(t)
+                .call(make_x_gridlines()
+                    .tickSize(-height)
+                    .tickFormat("")
+                );
+            // Update the y gridlines
+            svg.select(".grid.y")
+                .transition(t)
+                .call(make_y_gridlines()
+                    .tickSize(-width)
+                    .tickFormat("")
+                );
+
+            // Update time label
+            if (year != 0) {
+                svg.select("text.timeLabel")
+                    .transition(t)
+                    .text(year);
+
+                svg.select("text.timeLabel")
+                    .on("click", function(d) {
+                        updateData(data, 0);
+                    });
+            } else {
+                svg.select("text.timeLabel")
+                    .transition(t)
+                    .text("1965 to 2015");
+            }
+
+            // Update the lines
+            // Update the line for earthquakes
+            svg.select(".lineEarthquake")
+                .transition(t)
+                .attr("d", lineEarthquake(dataPrepared));
+            // Update the line for temperature
+            svg.select(".lineTemperature") // change the line
+                .transition(t)
+                .attr("d", lineTemperature(dataPrepared));
+
+
+            // Update the circles on the line
+            var dot = svg.selectAll("circle")
+                .data(dataPrepared);
+
+            dot.exit().remove();
+
+            dot.transition(t)
+                .attr("r", 3)
+                .attr("cx", function(d) {
+                    return xScale(d.date);
+                })
+                .attr("cy", function(d) {
+                    return yScaleLeft(d.count);
+                });
+
+            dot.enter()
+                .append("circle")
+                .attr("r", 3)
+                .attr("cx", function(d) {
+                    return xScale(d.date) + margin.left;
+                })
+                .attr("cy", function(d) {
+                    return yScaleLeft(d.count) + margin.top;
+                })
+                .on("mouseover", function(d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html("Year: " + formatTime(d.date) + "<br/>" + "Earthquakes Count: " + d.count + "<br/>" + "Temperature Anomaly: " + d.temperature.toFixed(2) + "&deg;C")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function(d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                })
+                .on("click", function(d) {
+                    updateData(data, d.date.getFullYear());
+                });
+
+            // Update top label
+            if (year != 0) {
+                svg.select("text.topLabel")
+                    .transition(t)
+                    .text("Return to yearly");
+
+                svg.select("text.topLabel")
+                    .on("click", function(d) {
+                        updateData(data, 0);
+                    });
+            } else {
+                svg.select("text.topLabel")
+                    .transition(t)
+                    .text("Click on circle on the line to zoom in");
+            }
+
+            // Update x axis label
+            if (year != 0) {
+                svg.select("text.xLabel")
+                    .transition(t)
+                    .text("Month");
+
+            } else {
+                svg.select("text.xLabel")
+                    .transition(t)
+                    .text("Year");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
